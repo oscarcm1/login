@@ -15,24 +15,30 @@ function LoginFacebook() {
 
             <div className='card-facebook'>
 
-                <div className='data-facebook'>
-                    <input placeholder='Email or Phone number' />
-                    <input placeholder='Password' />
-                </div>
+                <div className='card'>
 
-                <div className='btn-facebook'>
-                    <button>Log In</button>
-                </div>
 
-                <div className='changePassword'>
-                    <a>Forgot password?</a>
-                </div>
+                    <div className='data-facebook'>
+                        <input placeholder='Email or Phone number' />
+                        <input placeholder='Password' />
+                    </div>
 
-                <div className='new-account'>
-                    <button>Create New Account</button>
+                    <div className='btn-facebook'>
+                        <button>Log In</button>
+                    </div>
+
+                    <div className='changePassword'>
+                        <a>Forgot password?</a>
+                    </div>
+
+                    <div className='new-account'>
+                        <button>Create New Account</button>
+                    </div>
+
                 </div>
 
             </div>
+
         </div>
     )
 }
