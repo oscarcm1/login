@@ -5,11 +5,11 @@ function LoginElegant() {
     return (
         <div className='login'>
             <div className='card-box'>
-            
+
                 <div className='figure'>
                     <div className='title'>
-                       <h2>Login</h2>
-                    </div> 
+                        <h2>Login</h2>
+                    </div>
                 </div>
                 <div className='form'>
                     <div className='data'>
