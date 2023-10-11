@@ -1,12 +1,14 @@
 
 import './App.css'
-import LoginFacebook from './pages/LoginFacebook'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
+import LoginGlass from './pages/LoginGlass'
 function App() {
 
   return (
     <>
-    <LoginFacebook/>
+    <LoginGlass/>
     </>
   )
 }
