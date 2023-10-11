@@ -1,19 +1,23 @@
 import React from 'react'
-import "./login-glass.css"
+import "./login-elegant.css"
 
-function LoginGlass() {
+function LoginElegant() {
     return (
         <div className='login'>
             <div className='card-box'>
             
+                <div className='figure'>
+                    <div className='title'>
+                       <h2>Login</h2>
+                    </div> 
+                </div>
                 <div className='form'>
-                    <h2>Login</h2>
                     <div className='data'>
-                        <label><input placeholder='Email' /></label>
-                        <label><input type='password' placeholder='password' /></label>
+                        <label>Email<input placeholder='ingresa correo' /></label>
+                        <label>Contraseña<input type='password' placeholder='*ingresa contraseña' /></label>
                     </div>
                     <div className='recover'>
-                        <div>
+                        <div className='remember'>
                             <input type='checkbox' />
                             <span>Remember me</span>
                         </div>
@@ -25,7 +29,7 @@ function LoginGlass() {
                         <button>Login</button>
                     </div>
                     <div className='register'>
-                        <span>Don´t have a account?</span> <a>Sign up</a>
+                        <span>Don´t have a account?</span> <a href=''>Sign up</a>
                     </div>
 
                     <div className='social-media'>
@@ -40,4 +44,4 @@ function LoginGlass() {
     )
 }
 
-export default LoginGlass
+export default LoginElegant
