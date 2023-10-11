@@ -126,10 +126,20 @@
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 90%;
   }
 
   .information,
   .form {
     width: 100%;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 960px) {
+  .card-box {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 90%;
   }
 }
