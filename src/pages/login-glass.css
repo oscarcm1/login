@@ -23,7 +23,7 @@
   -o-border-radius: 10px;
   display: flex;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.535);
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(161, 103, 103, 0.3);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
