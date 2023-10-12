@@ -48,7 +48,6 @@
   -ms-border-radius: 100px 0px 0px 0px;
   -o-border-radius: 100px 0px 0px 0px;
   top: 40px;
-
 }
 .form label {
   font-size: 12px;
@@ -71,7 +70,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .title h2 {
   text-align: center;
