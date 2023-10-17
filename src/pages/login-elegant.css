@@ -162,3 +162,24 @@
     width: 100%;
   }
 }
+
+@media (max-width: 960px) and (orientation: landscape) {
+  .card-box {
+    height: 90vh;
+    width: 90%;
+  }
+
+  .figure {
+    font-size: 12px;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .form {
+    height: auto;
+    width: 100%;
+  }
+}
