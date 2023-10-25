@@ -1,0 +1,163 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+:root {
+  --color-primary: black;
+}
+
+.login {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.card-login {
+  position: relative;
+  width: 400px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.464);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.card-login:hover {
+  position: relative;
+  width: 400px;
+  height: auto;
+  background-color: rgba(232, 232, 232, 0.866);
+  backdrop-filter: blur(4px);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.card-login h2 {
+  font-size: 30px;
+  font-weight: 100;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.picture {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picture .bi {
+  color: white;
+  font-size: 50px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+}
+
+.info input {
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.info section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.info span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.info a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.info a:hover{
+    color: rgb(51, 51, 51);
+}
+.card-login button {
+  background-color: var(--color-primary);
+  padding: 10px 40px;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+
+.change {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.change button {
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+}
+
+.change button:hover {
+  background-color: gray;
+}
+.card-login.active {
+  display: none;
+}
