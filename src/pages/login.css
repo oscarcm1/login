@@ -8,7 +8,7 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://img.freepik.com/foto-gratis/fondo-pantalla-abstracto-nebulosa-ultra-detallado-7_1562-752.jpg?w=740&t=st=1698270284~exp=1698270884~hmac=6d7815cb3fb7c64051da1206d69019e19239f942b74fa375a27547da2cc1493f");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -115,7 +115,7 @@
 }
 
 .info a:hover{
-    color: rgb(51, 51, 51);
+    color: blue;
 }
 .card-login button {
   background-color: var(--color-primary);
