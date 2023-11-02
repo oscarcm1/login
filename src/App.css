@@ -34,8 +34,8 @@ html {
 --color-text: rgb(255, 255, 255);
 --color-button:rgb(99, 238, 99);
 --font-size: 12px;
---box-shadow: 4px 4px 16px rgb(255, 255, 255);
---img: url("https://images.pexels.com/photos/1546027/pexels-photo-1546027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+--box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.123);
+--img: url("https://images.pexels.com/photos/212323/pexels-photo-212323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 --img2: url("https://images.pexels.com/photos/1995730/pexels-photo-1995730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 --name-example: red;
 

@@ -15,7 +15,7 @@
 .card-box {
   position: relative;
   width: 600px;
-  height: 400px;
+  height: auto;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -23,12 +23,31 @@
   -o-border-radius: 10px;
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.4);
-
   background-image: var(--img);
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: var(--box-shadow);
-
+  scale: .9;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  padding: 20px;
 
 }
+.card-box:hover{
+  scale: 1;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+
+}
+
+
+
 .information {
   width: 50%;
   color: var(--color-text);
@@ -40,7 +59,7 @@
 
 .information p {
   text-align: center;
-  font-size: 10px;
+  font-size: 1rem;
   width: 60%;
 }
 .information span {
@@ -52,9 +71,16 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(15, 15, 15, 0.178);
-  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.2);
+  gap: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
+
+
 .form h2 {
   text-align: center;
 }
@@ -85,10 +111,11 @@
   display: flex;
   justify-content: space-between;
   margin: 20px;
+  gap: 20px;
 }
 .recover span,
 .recover a {
-  font-size:var(--font-size);
+  font-size: .8rem;
   color: var(--color-text);
 }
 
@@ -105,9 +132,10 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  padding: 5px;
+  padding: 10px 10px;
   width: 80%;
-  color:var(--color-text);
+  color: rgb(68, 68, 68);
+  font-weight: bold;
 }
 
 ::placeholder {
@@ -136,6 +164,15 @@
   .form {
     width: 100%;
   }
+
+
+.data{
+  display: flex;
+  gap: 20px;
+}
+.data input {
+  padding: 10px;
+}
 }
 
 @media (orientation: landscape) and (max-width: 960px) {
