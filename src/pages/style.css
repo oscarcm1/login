@@ -51,6 +51,8 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   overflow: hidden;
+  animation: zoom 2s;
+  -webkit-animation: zoom 2s;
 }
 
 .left {
@@ -60,7 +62,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-principal);
   color: white;
   border-radius: 20px 0px 0px 20px;
   -webkit-border-radius: 20px 0px 0px 20px;
@@ -69,6 +70,9 @@
   -o-border-radius: 20px 0px 0px 20px;
   box-shadow: 10px 0px 0px 5px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  animation-name: slide;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 
 .left img {
@@ -159,4 +163,25 @@
 
 a {
   text-decoration: none;
+}
+
+
+@keyframes slide {
+  from {
+    background-color: white;
+    margin-left: 100%;
+  }
+  to {
+    background-color: var(--color-principal);
+    margin-left: 0%;
+  }
+}
+
+@keyframes zoom {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
