@@ -11,14 +11,16 @@ function Card() {
             hidden = !hidden;
             document.querySelector('.right').classList.add('active');
             document.querySelector('.register').classList.add('active');
+            document.querySelector('.login').classList.add('active');
 
         } else {
             hidden = !hidden;
             document.querySelector('.right').classList.remove('active');
             document.querySelector('.register').classList.remove('active');
+            document.querySelector('.login').classList.remove('active');
         }
     }
-    
+
     return (
         <section className='box'>
             <section className='login'>

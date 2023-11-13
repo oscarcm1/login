@@ -86,7 +86,8 @@
   text-align: center;
 }
 
-.right, .register {
+.right,
+.register {
   position: relative;
   width: 40%;
 }
@@ -136,7 +137,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .links button {
@@ -154,9 +154,9 @@
   cursor: pointer;
 }
 
-button.secundary{
-    background-color: rgba(143, 216, 95, 0.993);
-    color: white;
+button.secundary {
+  background-color: rgba(143, 216, 95, 0.993);
+  color: white;
 }
 .footer {
   position: absolute;
@@ -171,7 +171,6 @@ button.secundary{
 a {
   text-decoration: none;
 }
-
 
 @keyframes slide {
   from {
@@ -193,13 +192,21 @@ a {
   }
 }
 
-.right ,
-.register.active{
+.right,
+.register.active {
   display: block;
 }
-.right.active, 
-.register{
-    display:none ;
+.right.active,
+.register {
+  display: none;
 }
 
-
+.login.active {
+  display: flex;
+  flex-direction: row-reverse;
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+}
