@@ -86,7 +86,7 @@
   text-align: center;
 }
 
-.right {
+.right, .register {
   position: relative;
   width: 40%;
 }
@@ -114,18 +114,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   margin-top: 50px;
+  padding: 20px;
 }
 
 .data p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .data input {
   width: 60%;
   border: none;
   border-bottom: 1px solid var(--color-principal);
+  font-size: 1rem;
 }
 
 .links {
@@ -134,7 +136,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+
 }
 
 .links button {
@@ -145,12 +147,17 @@
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
   border: none;
-  padding: 15px 40px;
+  padding: 10px 20px;
   background-color: var(--color-principal);
   color: white;
   font-size: larger;
+  cursor: pointer;
 }
 
+button.secundary{
+    background-color: rgba(143, 216, 95, 0.993);
+    color: white;
+}
 .footer {
   position: absolute;
   width: 100%;
@@ -185,3 +192,14 @@ a {
     scale: 1;
   }
 }
+
+.right ,
+.register.active{
+  display: block;
+}
+.right.active, 
+.register{
+    display:none ;
+}
+
+
