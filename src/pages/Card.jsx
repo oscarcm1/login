@@ -4,7 +4,7 @@ import A from "../assets/person.svg"
 
 function Card() {
 
-    
+
     let hidden = true;
     function active() {
         if (hidden) {
@@ -20,17 +20,17 @@ function Card() {
             document.querySelector('.login').classList.remove('active');
         }
     }
+    
 
     return (
         <section className='box'>
             <section className='login'>
-
                 <div className='left'>
                     <img src={A} alt="" />
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ultricies varius, convallis pulvinar orci risus auctor torquent fusce mattis. </p>
                 </div>
 
-                <div className={'right'}>
+                <div className='right'>
                     <h1 className='title'>Welcome back</h1>
                     <form className='data'>
                         <p className=''>Login your accunt</p>
@@ -44,6 +44,7 @@ function Card() {
                     </form>
                     <div className='links'>
                         <button className='secundary' onClick={active}>Registrar</button>
+                        <a href='' className='footer'>Forgot password?</a>
                     </div>
                     <a href='' className='footer'>Forgot password?</a>
                 </div>

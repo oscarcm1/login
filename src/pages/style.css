@@ -18,6 +18,7 @@
   --color-principal: #8053dd;
   --font-bold: poppins-bold;
   --font: poppins-thin;
+  --shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*=======================   Card  ===============================*/
@@ -39,8 +40,8 @@
 
 .login {
   position: relative;
-  width: 1000px;
-  height: 600px;
+  width: 800px;
+  height: 500px;
   background-color: white;
   border-radius: 20px;
   display: flex;
@@ -51,8 +52,7 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   overflow: hidden;
-  animation: zoom 2s;
-  -webkit-animation: zoom 2s;
+
 }
 
 .left {
@@ -63,17 +63,13 @@
   justify-content: center;
   align-items: center;
   color: white;
-  border-radius: 20px 0px 0px 20px;
-  -webkit-border-radius: 20px 0px 0px 20px;
-  -moz-border-radius: 20px 0px 0px 20px;
-  -ms-border-radius: 20px 0px 0px 20px;
-  -o-border-radius: 20px 0px 0px 20px;
-  box-shadow: 10px 0px 0px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -15px 0px 15px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  animation-name: slide;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
+  background-color: var(--color-principal);
+  animation: fade-out 2s ;
+  -webkit-animation: fade-out 2s ;
 }
+
 
 .left img {
   width: 70%;
@@ -106,6 +102,7 @@
   margin-top: 20px;
   text-align: center;
   font-size: 20px;
+  box-shadow: var(--shadow);
 }
 
 .data {
@@ -116,8 +113,8 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 50px;
-  padding: 20px;
+  margin-top: 0px;
+  padding: 20px 0px;
 }
 
 .data p {
@@ -137,6 +134,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  z-index: 100;
 }
 
 .links button {
@@ -152,6 +151,7 @@
   color: white;
   font-size: larger;
   cursor: pointer;
+  box-shadow: var(--shadow);
 }
 
 button.secundary {
@@ -170,31 +170,15 @@ button.secundary {
 
 a {
   text-decoration: none;
-}
-
-@keyframes slide {
-  from {
-    background-color: white;
-    margin-left: 100%;
-  }
-  to {
-    background-color: var(--color-principal);
-    margin-left: 0%;
-  }
-}
-
-@keyframes zoom {
-  from {
-    scale: 0;
-  }
-  to {
-    scale: 1;
-  }
+  font-size: 12px;
+  font-family: ar;
 }
 
 .right,
 .register.active {
   display: block;
+  animation: fade-out 2s ;
+  -webkit-animation: fade-out 2s ;
 }
 .right.active,
 .register {
@@ -204,9 +188,33 @@ a {
 .login.active {
   display: flex;
   flex-direction: row-reverse;
-  transition: 2s;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
 }
+
+
+
+@media  (max-width: 920px) {
+
+    .login{
+        width: calc(100% - 80px);
+    }
+
+    .left,
+    .right,
+    .register {
+      position: relative;
+      width: 50%;
+    }
+    
+}
+
+
+
+
+@keyframes fade-out {
+    from {
+     opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
