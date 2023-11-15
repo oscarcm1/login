@@ -13,7 +13,6 @@
 }
 
 .box-login {
-  top: 30px;
   position: relative;
   width: 300px;
   background-color: rgb(255, 255, 255);
@@ -31,6 +30,20 @@
   animation: animation1 1s;
   -webkit-animation: animation1 1s;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  scale: .8;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.box-login:hover{
+  scale: 1;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 .logo-login {
   position: relative;
