@@ -31,6 +31,20 @@
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.535);
   background-color: rgb(255, 255, 255);
   border: 1px solid rgba(255, 255, 255, 0.23);
+  scale: .9;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.card-box:hover{
+  scale: 1;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 .form {
   position: relative;
