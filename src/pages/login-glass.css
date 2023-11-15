@@ -32,6 +32,20 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgba(254, 254, 254, 0.253);
   backdrop-filter: blur(4px);
+  scale: .9;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.card-box:hover{
+  scale: 1;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 .form {
   width: 80%;
