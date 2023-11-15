@@ -1,14 +1,14 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 :root {
-  --color-primary: black;
+  --color-primary: rgb(0, 0, 0);
 }
 
 .login {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("https://img.freepik.com/foto-gratis/fondo-pantalla-abstracto-nebulosa-ultra-detallado-7_1562-752.jpg?w=740&t=st=1698270284~exp=1698270884~hmac=6d7815cb3fb7c64051da1206d69019e19239f942b74fa375a27547da2cc1493f");
+  background-image: url("https://images.pexels.com/photos/2646237/pexels-photo-2646237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
