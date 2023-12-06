@@ -6,6 +6,7 @@ function Card() {
   return (
 
     <section className='card'>
+       <h1>Logo</h1>
 
       <div className='circle'>
         <div className="circle2"></div>
@@ -13,7 +14,7 @@ function Card() {
 
       <section className='card-login'>
         <form action="" className='login'>
-          <h1>Sign in</h1>
+          <h2>Sign in</h2>
           <span className=''>New user?  <a href="#">Create an Account</a></span>
           <input type="text" placeholder='Email Adress' />
           <input type="text" placeholder='Password' />
