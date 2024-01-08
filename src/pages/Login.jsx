@@ -14,7 +14,7 @@ function Login() {
                 <div className='card-login'>
                     <div className='change'> <button type="button" onClick={() => { setShow(!show); }}><i className="bi bi-caret-right-fill"></i></button></div>
                     <h2>Login</h2>
-                    <div className='picture'></div>
+                    <div className='picture'><i className="bi bi-person-circle"></i></div>
                     <div className='info'>
                         <input placeholder='Email' />
                         <input placeholder='Password' />
