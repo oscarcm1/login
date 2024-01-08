@@ -116,9 +116,10 @@ body {
 
 .login {
   position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   color: var(--color-text);
@@ -128,11 +129,12 @@ body {
   width: 100%;
 }
 .login span {
-  width: 100%;
+  width: 60%;
 }
 
 .login input {
-  width: 100%;
+
+  width: 60%;
   font-size: 1rem;
   border: none;
   border-radius: 10px;
