@@ -16,16 +16,30 @@ body {
   width: 100%;
   height: 100vh;
 }
-.card {
+.container {
   position: relative;
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Dreams-Light;
   background-color: rgb(255, 255, 255);
+}
+.card {
+  position: relative;
+  width: 600px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  font-family: Dreams-Light;
+  overflow: hidden;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 /* =================== Tablet =================== */
@@ -46,20 +60,11 @@ body {
   width: 100%;
   height: 60vh;
   border-radius: 0px 0px 15% 15%;
-  background-image: linear-gradient(
-    to bottom,
-    #d16ba5,
-    #c777b9,
-    #ba83ca,
-    #aa8fd8,
-    #9a9ae1,
-    #8aa7ec,
-    #79b3f4,
-    #69bff8,
-    #52cffe,
-    #41dfff,
-    #46eefa,
-    #5ffbf1
+  background: rgb(29, 183, 185);
+  background: linear-gradient(
+    0deg,
+    rgba(29, 183, 185, 1) 0%,
+    rgba(147, 198, 104, 1) 100%
   );
   animation: down 2s linear;
   -webkit-animation: down 2s linear;
@@ -90,13 +95,12 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: rgba(78, 79, 87, 0.1);
-  width: 90%;
-  height: 80vh;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  width: 100%;
+  border-radius: 0x 0px 20px 20px;
+  -webkit-border-radius: 0x 0px 20px 20p;
+  -moz-border-radius: 0x 0px 20px 20p;
+  -ms-border-radius: 0x 0px 20px 20p;
+  -o-border-radius: 0x 0px 20px 20p;
   border: 1px solid white;
   backdrop-filter: blur(10px);
   font-family: Dreams-Light;
@@ -212,5 +216,3 @@ body {
     scale: 1;
   }
 }
-
-
